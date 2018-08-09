@@ -1,0 +1,68 @@
+.por-que-bemis{
+	display: flex;
+	width:100%;
+	align-items:center;
+	justify-content:space-between;
+	.element{
+		width:30%;
+		display:flex;
+		align-items:center;
+
+		.icon{
+			box-shadow: inset 3px 3px 8px 1px rgba(215,215,215,0.59);
+			background:$white;
+			border-radius:100%;
+			padding:10px;
+			margin-right:20px;
+
+		}
+		img{
+			max-width:80px;
+			
+		}
+	}
+}
+.productos-soluciones{
+	display: flex;
+	width:100%;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	.producto{
+		width:33%;
+		display:flex;
+		align-items:center;
+		margin-bottom:30px;
+		img{
+			width:60px;
+			border:5px solid white;
+
+		}
+		h3{
+			color:$white;
+			font-family:$regular;
+			font-size:1rem;
+			margin-left:20px;
+		}
+	}
+}
+section.nuestros-productos{
+	background:$blue;
+	box-shadow: inset 0px 0px 31px -7px rgba(0,0,0,1);
+
+}
+.container.certificaciones{
+	display: flex;
+	width:100%;
+	align-items:center;
+	justify-content:space-between;
+	.iso{
+		width:130px;
+	}
+	.fs{
+		width:300px;
+	}
+	img{
+		margin-bottom:25px;
+	}
+}

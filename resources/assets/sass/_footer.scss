@@ -1,0 +1,41 @@
+footer{
+	background:#6b6b6b;
+	padding:20px 0;
+	color:white;
+	font-size:1rem;
+	a{
+		color:white;
+		&:hover{
+			text-decoration:underline;
+			color:white;
+		}
+	}
+	.brand-footer{
+		width:200px;
+		margin-bottom:30px;
+	}
+	p + p{
+		margin-top:20px;
+	}
+	.container > .row{
+		display:flex;
+		align-items:flex-end;
+	}
+	.social-links{
+		list-style:none;
+		padding:0;
+		img{
+			width:20px;
+			margin-right:5px;
+		}
+		li{
+			margin-bottom:15px;
+			a{
+				color:white;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}

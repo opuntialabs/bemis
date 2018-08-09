@@ -1,0 +1,31 @@
+section.contacto{
+	background: url('../img/plastico-2.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	input,textarea{
+		margin-bottom:15px;
+		border-radius:0;
+		background:transparent;
+		color:$blue;
+		font-family:$regular;
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: $blue;
+	}
+	input[type="submit"]{
+		font-family:$bold;
+		color:$white;
+		text-transform:uppercase;
+		background:$blue;
+		letter-spacing:3px;
+		padding:10px 30px;
+		float:right;
+		transition: background 0.5s;
+		transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+		&:hover{
+			background:$red;
+		}
+	}
+}

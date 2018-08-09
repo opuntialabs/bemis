@@ -1,0 +1,47 @@
+section.hero.soluciones{
+	position:relative;
+	.title{
+		position: absolute;
+		bottom:50px;
+		width:100%;
+	}
+	h1{
+		
+		text-align:center;
+	    font-size: 2rem;
+	    line-height: 4rem;
+	    padding: 0px 20px;
+	    padding-top: 5px;
+	    font-family:$regular;
+	    text-transform:none;
+	    color: white;
+	}
+	
+}
+section.empaques{
+	.container-fluid{
+		padding:0 15%;
+	}
+}
+.title-blue.left.subtitle{
+	span{
+		font-family:$bold;
+		font-size:1.5rem;
+		text-transform:none;
+		color:$blue;
+		position:relative;
+		
+		&:after{
+
+			content:'';
+			width:150px;
+	    	height:10px;
+	    	background:$red;
+	    	position:absolute;
+	    	left:-200px;
+	    	top: 5px;
+		    border-top-right-radius: 5px;
+		    border-bottom-right-radius: 5px;
+		}
+	}
+}
