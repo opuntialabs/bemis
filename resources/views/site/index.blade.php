@@ -4,9 +4,9 @@
 @endsection
 @section('content')
 <section class="hero">
-	<div class="imgCenter">
-		<img src="{{asset('img/bemis-empaques_flexibles-slide2.jpg')}}" alt="Empaques flexibles México">
-	</div>
+	@foreach($banners as $banner)
+		<img src="../{{$banner->banner_img}}" alt="Empaques flexibles México">
+	@endforeach
 </section>
 <section class="somos">
 	<div class="container-fluid">

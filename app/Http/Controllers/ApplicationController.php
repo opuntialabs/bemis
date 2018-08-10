@@ -16,8 +16,9 @@ class ApplicationController extends Controller
     public function index()
     {
         //
+        $banners = DB::table('banners')->get();
         $markets = Market::all();
-        return view('site.index') -> with(['markets' => $markets]);
+        return view('site.index') -> with(['markets' => $markets,'banners' => $banners]);
     }
 
     /**

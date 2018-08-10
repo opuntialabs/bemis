@@ -2,36 +2,19 @@
 <html>
 <head>
 	@yield('title')
-		<title>Bemis Empaques México</title>
+		<title>Empaques Flexibles y al Alto Vacío | Bemis Empaques de México</title>
 	<meta charset=utf-8>
-	<meta name=description content="Bemis Packaging México. Proveedor global de empaques para los productos que se encuentran en casi todos los pasillos del supermercado.">
+	<meta name=description content="Fabricación de empaques personalizados para la industria, etiqueta bopp, bolsa pouch por extrusión, empaques de polipropileno ¡Descubre soluciones de empaques!">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
 	<link rel="icon" href="{{asset('img/favicon.png')}}">
 </head>
 <body>
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-
-	<!-- Your customer chat code -->
-	<div class="fb-customerchat"
-	  attribution=setup_tool
-	  page_id="1609464345813217"
-	  logged_in_greeting="¡Hola!, ¿Cómo podemos ayudarte?"
-	  logged_out_greeting="¡Hola!, ¿Cómo podemos ayudarte?">
-	</div>
 	<div class="wrap-content">
 		<header>
 			<nav class="main">
 				<a href="/" class="brand nav-block">
-					<img src="{{asset('img/bemis-empaques_flexibles-logo.png')}}" alt="Bemis México">
+					<img src="{{asset('img/bemis-soluciones_de_empaques_mexico.png')}}" alt="Bemis México">
 				</a>
 				<ul class="main-nav">
 				    <li>

@@ -5,7 +5,7 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminMarketsController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminBannersController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
@@ -25,42 +25,25 @@
 			$this->button_filter = true;
 			$this->button_import = false;
 			$this->button_export = false;
-			$this->table = "markets";
+			$this->table = "banners";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Nombre","name"=>"name"];
-			$this->col[] = ["label"=>"Cover","name"=>"cover"];
-			$this->col[] = ["label"=>"Avatar","name"=>"avatar"];
-			$this->col[] = ["label"=>"Características","name"=>"description"];
-			$this->col[] = ["label"=>"Img Características","name"=>"description_img"];
-			$this->col[] = ["label"=>"Img Aplicaciones","name"=>"application_img"];
-			$this->col[] = ["label"=>"Img Soluciones","name"=>"solution_img"];
+			$this->col[] = ["label"=>"Banner","name"=>"banner_img"];
+			$this->col[] = ["label"=>"Título","name"=>"header_text"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
-			$this->form[] = ['label'=>'Cover','name'=>'cover','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Avatar','name'=>'avatar','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Caracteristicas','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Img Características','name'=>'description_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Img Aplicaciones','name'=>'application_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Img Soluciones','name'=>'solution_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Slug','name'=>'slug','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Banner','name'=>'banner_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Título','name'=>'header_text','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
-			//$this->form[] = ['label'=>'Cover','name'=>'cover','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Avatar','name'=>'avatar','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Caracteristicas','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Img Características','name'=>'description_img','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Img Aplicaciones','name'=>'application_img','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Img Soluciones','name'=>'solution_img','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Slug','name'=>'slug','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Banner','name'=>'banner_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Título','name'=>'header_text','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 
