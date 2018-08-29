@@ -3,7 +3,7 @@ header{
 	width: 100%;
 	top:0;
 	left:0;
-	padding:0 8% 0px 30px;
+	padding:0 8% 0px 60px;
 	background:#fff;
 	height: 80px;
 	border-bottom: 1px solid #dee0df;
@@ -44,51 +44,34 @@ nav.main{
 	ul.main-nav > li{
 		display: flex;
 	    align-items: center;
-	    margin: 0 15px;
+	    margin: 0 20px;
 	    transition: all .2s ease;
+	    position:relative;
 	    a{
-			color:$blue;
+			color:#5a5a5a;
 	    	font-family:$bold;
 	    	font-size:1rem;
 	    	text-transform:uppercase;
 	    	letter-spacing:.3px;
+	    	transition: color 0.5s;
+			transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 	    }
+	    &:hover{
+	    	a{
+	    		color:$blue;
+	    	}
+			
+		}
+		&:nth-child(2):after{
+			content:'▾';
+			position:absolute;
+			right: -13px;
+		}
 	}
 }
-ul.main-nav{
-	li{
-		position:relative;
-		a{
-			transition: color 0.5s;
-			transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-		}
-	}
-	li span{
-		line-height: 1.4;
-		padding: 0 0.35em;
-		transition: all 0.5s;
-		transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-		&:before{
-			content: '';
-			position: absolute;
-			z-index: -1;
-			bottom: 5px;
-			left: 0;
-			width: 100%;
-			height: 30%;
-			opacity: 1;
-			transform: scale3d(0,1,1);
-			transform-origin: 0% 50%;
-			transition: transform 0.5s;
-			transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-			background:#f7f7f7;
-		}
-	}
-	li:hover:not(.has-submenu) span::before{
-		transform-origin: 0% 50%;
-		transition-timing-function: ease;
-		transform: scale3d(1,1,1);
-	}
+.container-submenu{
+	position: absolute;
+	top: -5px;
 }
 ul.submenu{
 	visibility: hidden;
@@ -100,16 +83,18 @@ ul.submenu{
 	display: none;
 	padding-top:40px;
 	left: -258px;
-	padding-top: 35px;
+	padding-top: 60px;
     padding-left: 0;
     list-style: none;
-    top: 0;
+    top: 34px;
     width: 600px;
     flex-wrap: wrap;
+    background:$blue;
     li{
-		width: 290px;
+		width: 50%;
 		background: $blue;
 		padding: 5px 25px;
+		position:relative;
 		a{
 			color:$white!important;
 			font-family:$regular!important;
@@ -122,7 +107,25 @@ ul.submenu{
 			padding-top:20px;
 		}
 		&:last-child, &:nth-last-child(2){
-			padding-bottom:20px;
+			padding-bottom:40px;
+		}
+		&:nth-child(odd){
+			padding-left: 49px;
+    		padding-right: 0;
+		}
+		&:nth-child(even){
+			padding-left: 0;
+			padding-right: 70px;
+			margin-left: -55px;
+		}
+		&:first-child:after{
+			content: '';
+			position: absolute;
+			background: white;
+			width: 1px;
+			height: 162px;
+			z-index: 1;
+			right: 80px;
 		}
     }
     &:before{
@@ -133,8 +136,20 @@ ul.submenu{
 		border-right: 20px solid transparent;
 		border-bottom: 19px solid $blue;
 		position:absolute;
-		top:19px;
+		top:-19px;
 		left:calc(50% - 10px);
+    }
+    &:after{
+		content: 'Mercados';
+		color: white;
+		text-transform: uppercase;
+		top: 30px;
+		left: 48px;
+		position: absolute;
+		font-family: $bold;
+		font-size: 1.5rem;
+		font-weight: 100;
+		letter-spacing: 1px;
     }
 
 }

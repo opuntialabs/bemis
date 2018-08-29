@@ -33,14 +33,14 @@
 		</div>
 		<div class="half-space"></div>
 		<div class="row-flex">
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="imgCenter">
 					<img src="../{{$market->application_img}}" alt="{{$market->name}}">
 				</div>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<h2 class="title-blue right subtitle">
-					<span>Aplicaciones </span>
+					<span>Aplicaciones del empaque</span>
 				</h2>
 				<ul class="aplicaciones-list">
 					@foreach($market->applications as $application)
@@ -52,18 +52,20 @@
 		
 		
 		<div class="half-space"></div>
-		<h2 class="title-blue center subtitle">
-			<span>Soluciones de empaque </span>
-		</h2>
-		<ul class="soluciones-list">
-		    @foreach($market->solutions as $solution)
-			<li>{{$solution->name}}</li>
-			@endforeach
-		</ul>
-		<div class="imgCenter">
+		<div class="soluciones-empaque">
+				<h2 class="title-blue center subtitle">
+					<span>Soluciones de empaque </span>
+				</h2>
+				<ul class="soluciones-list">
+				    @foreach($market->solutions as $solution)
+					<li>{{$solution->name}}</li>
+					@endforeach
+				</ul>
+				<div class="imgCenter">
 					<img src="../{{$market->solution_img}}" alt="{{$market->name}}">
 				</div>
-		<div class="space"></div>
+			<div class="space"></div>
+		</div>
 	</div>
 </section>
 <section class="contactanos">

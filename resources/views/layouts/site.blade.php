@@ -8,6 +8,7 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
 	<link rel="icon" href="{{asset('img/favicon.png')}}">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 	<div class="wrap-content">
@@ -24,13 +25,15 @@
 				    </li>
 				    <li class="has-submenu">
 				    	<a href="#"><span>Mercados</span></a>
-				    	<ul class="submenu">
-				    		@foreach(App\Market::all() as $market)
-				    		<li>
-				    			<a href="../mercado/{{$market->slug}}">{{$market->name}}</a>
-				    		</li>
-				    		@endforeach
-				    	</ul>
+				    	<div class="container-submenu">
+				    		<ul class="submenu">
+					    		@foreach(App\Market::all() as $market)
+					    		<li>
+					    			<a href="../mercado/{{$market->slug}}">{{$market->name}}</a>
+					    		</li>
+					    		@endforeach
+					    	</ul>
+				    	</div>
 				    </li>
 				    <li>
 				    	<a href="http://bridge164.qodeinteractive.com/" target="_blank"><span>Blog</span></a>
@@ -87,5 +90,6 @@
 			</div>
 		</div>
 	</div>
+	@yield('scriptsFooter')
 </footer>
 </html>

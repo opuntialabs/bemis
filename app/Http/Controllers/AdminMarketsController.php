@@ -45,21 +45,21 @@
 			$this->form[] = ['label'=>'Cover','name'=>'cover','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Avatar','name'=>'avatar','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Caracteristicas','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Img Características','name'=>'description_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Img Aplicaciones','name'=>'application_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Img Soluciones','name'=>'solution_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Img Características','name'=>'description_img','type'=>'upload','validation'=>'min:1|max:2000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Img Aplicaciones','name'=>'application_img','type'=>'upload','validation'=>'min:1|max:2000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Img Soluciones','name'=>'solution_img','type'=>'upload','validation'=>'min:1|max:2000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Slug','name'=>'slug','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
 			//$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
-			//$this->form[] = ['label'=>'Cover','name'=>'cover','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Cover','name'=>'cover','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Avatar','name'=>'avatar','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Caracteristicas','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Img Características','name'=>'description_img','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Img Aplicaciones','name'=>'application_img','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Img Soluciones','name'=>'solution_img','type'=>'upload','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Img Características','name'=>'description_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Img Aplicaciones','name'=>'application_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Img Soluciones','name'=>'solution_img','type'=>'upload','validation'=>'required|min:1|max:2000','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Slug','name'=>'slug','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# OLD END FORM
 

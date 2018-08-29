@@ -20,11 +20,11 @@ section.hero.soluciones{
 }
 section.empaques{
 	.container-fluid{
-		padding:0 15%;
+		padding:0 8%;
 	}
 }
 .title-blue.right.subtitle{
-	text-align:right;
+	text-align:left;
 }
 .title-blue.subtitle{
 	span{
@@ -52,5 +52,12 @@ section.empaques{
 	height:15px;
 }
 .aplicaciones-list{
-	float:right;
+	float:left;
+	-webkit-padding-start: 15px;
+	li{
+		padding:5px 0;
+	}
+}
+.soluciones-empaque{
+	padding:0 15px;
 }

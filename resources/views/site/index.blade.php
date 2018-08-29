@@ -116,5 +116,16 @@
 		<a href="/contacto">¡Contáctanos!</a>
 	</div>
 </section>
-
+@endsection
+@section('scriptsFooter')
+<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('section.hero').slick({
+			autoplay:true,
+			autoplaySpeed: 2000,
+			fade: true,
+		});
+	});
+</script>
 @endsection
